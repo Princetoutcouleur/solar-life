@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar-toggler {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#header .banner-img {
+  background-image: url(./Assets/banner-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#header .banner-content {
+  background: linear-gradient(to right, black, transparent);
+  height: 470px;
+}
+#header .banner-content h1 {
+  font-size: 88px;
+}
+/* @media (max-width: 600px) {
+  #header .banner-img{
+  background-image: url(./Assets/banner-img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+  #header .banner-content h1{
+    font-size: 25px;
   }
-  to {
-    transform: rotate(360deg);
+  
+} */
+@media (max-width: 1024px) {
+  #header .banner-img {
+    background-image: url(./Assets/banner-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
   }
+  #header .banner-content {
+    background: linear-gradient(to right, black, transparent);
+    height: 300px;
+  }
+  #header .banner-content h1 {
+    font-size: 35px;
+  }
+}
+#header .banner-content h1 span {
+  color: #ee0000;
+}
+#expertise-card {
+  height: 300px;
+}
+#expertise-card .card-content {
+  background-color: rgba(19, 19, 19, 0.416);
+  height: 100%;
+}
+#expertise-card .solution-solaire {
+  background-image: url(./Assets/expertise-1.png);
+  background-size: cover;
+  color: white;
+}
+#expertise-card .service-cable {
+  background-image: url(./Assets/expertise-2.png);
+  background-size: cover;
+  color: white;
+}
+#expertise-card .solution-internet {
+  background-image: url(./Assets/expertise-3.png);
+  background-size: cover;
+  color: white;
+}
+#expertise-card .service-telephone {
+  background-image: url(./Assets/expertise-4.png);
+  background-size: cover;
+  color: white;
+}
+.red-color {
+  color: #ee0000 !important;
+}
+.red-bg {
+  background-color: #ee0000 !important;
+}
+.about-card:hover {
+  background-color: #ee0000 !important;
+  color: white !important;
+  .red-color {
+    color: white !important;
+  }
+}
+#service-card img {
+  width: 55px;
+}
+#service-card .card {
+  background-color: #f3f3f3;
 }
